@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html,
+      div,
+      ul,
+      li,
+      a {
+        margin: 0px;
+        padding: 0px;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      div.container {
+        width: 1200px;
+        background-color: coral;
+        margin: 200px auto;
+        overflow: hidden;
+      }
+      ul.top-menu {
+        float: right;
+      }
+      ul.top-menu li {
+        float: left;
+      }
+      ul.top-menu li a {
+        color: blue;
+        font-size: 12px;
+        display: block; /*개행문자 처리*/
+        background: url("05.png") no-repeat 0px center; /*아이콘 중앙으로 정렬*/
+        background-size: 10px;
+        padding-left: 15px;
+        margin-right: 10px;
+      }
+      ul.top-menu li:last-child a {
+        margin-right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="top-menu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a class="last" href="#">즐겨찾기</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨텐츠 제작하기</title>
+
+    <style>
+      body,
+      html,
+      div,
+      span,
+      a,
+      img {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      div.container {
+        width: 750px;
+        padding: 24px;
+        border: solid 1px gray;
+        margin: 100px auto;
+        /*
+        margin : 0 auto;  
+        컨텐츠 가운데 정렬 속성
+        주의 : 반드시 영역에 대한 값이 존재해야 함.
+        */
+        overflow: auto;
+      }
+      img,
+      div.text-container {
+        float: left;
+      }
+      div.text-container {
+        width: 550px;
+        margin-left: 8px;
+      }
+
+      span {
+        display: block;
+      }
+
+      span.sub-title {
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 4px;
+        /* 
+        html의 기본 폰트사이즈는 16px
+        최대size제약은 없으나 최소size는 10px
+        12px미만은 지양하는게 좋다
+         */
+      }
+      span.title {
+        font-size: 24;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      span.text {
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 24px;
+      }
+      a {
+        color: black;
+        text-decoration: dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="woman.jpg" alt="여성모델" />
+      <div class="text-container">
+        <span class="sub-title">2016 LAFUMA CADALOGUE</span>
+        <span class="title">ATHELTIC + TRECKKING</span>
+        <span class="text">
+          도심속 가벼운 애슬레틱에서도, 자연과 함께 즐기는 트레킹에서도, 언제
+          어디서나 라푸마와 함께라면 당신의 모든 엑티비티한 순간들은 더욱
+          FREXH하게 변화한다.
+        </span>
+
+        <a href="https://naver.com" title="상세 페이지로 현재창에서 이동"
+          >view More
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

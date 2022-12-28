@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨텐츠 생성하기</title>
+
+    <style>
+      body,
+      html,
+      div,
+      span,
+      a {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      div.container {
+        width: 500px;
+        height: 244px;
+        padding: 24px;
+        border: solid 1px gray;
+        margin: 100px auto;
+        background: url("woman.jpg") no-repeat 24px 24px;
+        padding-left: 226px;
+        /* padding으로 강제로 영역을 만들어주고 그만큼 width등을 조정하기 */
+      }
+      span {
+        display: block;
+      }
+      span.sub-title {
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 4px;
+      }
+      span.title {
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      span.text {
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 20px;
+      }
+      a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 이미지를 백그라운드로 -->
+    <div class="container">
+      <div class="text-container">
+        <span class="sub-title">2016 LAFUMA CADALOGUE</span>
+        <span class="title">ATHELTIC + TRECKKING</span>
+        <span class="text">
+          도심속 가벼운 애슬레틱에서도, 자연과 함께 즐기는 트레킹에서도, 언제
+          어디서나 라푸마와 함께라면 당신의 모든 엑티비티한 순간들은 더욱
+          FREXH하게 변화한다.
+        </span>
+
+        <a href="https://naver.com" title="상세 페이지로 현재창에서 이동"
+          >view More
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

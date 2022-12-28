@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gnb 만들기</title>
+    <style>
+      body,
+      html,
+      div,
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      div.container {
+        width: 1200px;
+        margin: 200px auto;
+        background: coral;
+        padding: 20px;
+        text-align: center;
+      }
+      ul.gnb {
+        height: 50px;
+        background: pink;
+        display: inline-block;
+        font-size: 0px;
+      }
+      ul.gnb li {
+        padding: 0px 50px;
+        height: 50px;
+        display: inline-block;
+        background: aqua;
+        border-right: solid 2px gray;
+      }
+      ul.gnb li:last-child {
+        border-right: none;
+      }
+      ul.gnb li a {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        color: black;
+        line-height: 50px;
+        /* text수직 정렬 line-height의 값을 height의 값과 동일하게, 한 줄 일때만 사용 가능한 방법 */
+      }
+      ul.gnb li:hover {
+        background: green;
+      }
+      ul.gnb li:hover a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="gnb">
+        <li><a href="#">글자수가</a></li>
+        <li><a href="#">달라도</a></li>
+        <li><a href="#">일정하게에에</a></li>
+        <li><a href="#">나눌수</a></li>
+        <li><a href="#">있ㄷ</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
